@@ -6,7 +6,7 @@ const Projects = () => {
 			id: 1,
 			imageSrc: '/images/project_1.webp',
 			title: 'Personal Website',
-			href: 'https://lucaraveri.com',
+			href: 'https://www.lucaraveri.com/',
 			description: 'My personal website, built with Next.js and Tailwind CSS. Hosted on Vercel.'
 		},
 		{
