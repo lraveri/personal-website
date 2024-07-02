@@ -4,10 +4,11 @@ import Image from 'next/image';
 interface CardProps {
 	imageSrc: string;
 	title: string;
+	description: string;
 	href: string;
 }
 
-const Card: React.FC<CardProps> = ({ imageSrc, title, href }) => {
+const ProjectCard: React.FC<CardProps> = ({ imageSrc, title, href, description }) => {
 	return (
 		<Link href={href}
 			  className="block bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
@@ -19,11 +20,14 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, href }) => {
 				height={250}
 				className="w-full h-56 object-cover"
 			/>
-			<div className="p-4">
+			<div className="pl-4 pb-2 pr-4 pt-4">
 				<h2 className="text-xl font-bold text-gray-800">{title}</h2>
+			</div>
+			<div className="pl-4 pr-4 pb-4">
+				<p className="text-gray-600">{description}</p>
 			</div>
 		</Link>
 	);
 };
 
-export default Card;
+export default ProjectCard;

@@ -1,4 +1,4 @@
-import Card from '@/components/Card';
+import ArticleCard from '@/components/cards/ArticleCard';
 
 const Blog = () => {
 	const articles = [
@@ -33,7 +33,7 @@ const Blog = () => {
 			<h1 className="text-3xl font-bold mb-6 text-center sm:py-4">Articles</h1>
 			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 				{articles.map(article => (
-					<Card
+					<ArticleCard
 						key={article.id}
 						imageSrc={article.imageSrc}
 						title={article.title}
@@ -42,6 +42,19 @@ const Blog = () => {
 				))}
 			</div>
 		</div>
+		// <div className="container mx-auto py-8">
+		// 	<h1 className="text-3xl font-bold mb-6 text-center sm:py-4">Keynotes</h1>
+		// 	<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+		// 		{articles.map(article => (
+		// 			<ArticleCard
+		// 				key={article.id}
+		// 				imageSrc={article.imageSrc}
+		// 				title={article.title}
+		// 				href={article.href}
+		// 			/>
+		// 		))}
+		// 	</div>
+		// </div>;
 	);
 };
 

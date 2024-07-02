@@ -6,7 +6,7 @@ import MobileMenuToggle from '@/components/navbar/MobileMenuToggle';
 
 export default async function Navbar() {
 	return (
-		<nav className="w-full bg-white text-white py-4 relative">
+		<nav className="w-full bg-white text-white pt-4 relative">
 			<div className="container mx-auto flex justify-between items-center">
 				<div className="flex items-center">
 					<Link href={'/'}>
