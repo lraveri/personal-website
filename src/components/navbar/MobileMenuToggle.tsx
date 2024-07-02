@@ -19,7 +19,7 @@ const MobileMenuToggle = () => {
 			</button>
 			{isMobileMenuOpen && (
 				<div className="absolute top-full left-0 w-full bg-white">
-					<div className="flex flex-col items-center space-y-4 mt-4">
+					<div className="flex flex-col items-center space-y-4 mt-4 mb-4">
 						<NavButton href="/blog" label="Blog" />
 						<NavButton href="/projects" label="Projects" />
 						<NavButton href="/experience" label="Experience" />
