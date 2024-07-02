@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Atkinson_Hyperlegible, Inter, Poppins } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/navbar/Navbar';
+import Footer from '@/components/footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -30,10 +31,11 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 		<body className={atkinson.className}>
-		<main className="min-h-screen flex flex-col items-center bg-white">
+		<div className="min-h-screen flex flex-col items-center bg-white">
 			<Navbar></Navbar>
-			{children}
-		</main>
+			<main className="flex-grow">{children}</main>
+			<Footer></Footer>
+		</div>
 		</body>
 		</html>
 	);
