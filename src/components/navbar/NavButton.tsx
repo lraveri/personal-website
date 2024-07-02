@@ -11,10 +11,10 @@ export default function NavButton({ href, label }: Readonly<NavButtonProps>) {
 	const pathname = usePathname();
 
 	const linkClasses = (path: string) =>
-		`px-4 py-2 rounded-full text-xl font-medium ${
+		`px-4 py-2 rounded-full text-l font-medium ${
 			pathname === path
 				? 'text-white bg-gray-700'
-				: 'text-white hover:bg-gray-700 hover:text-white'
+				: 'text-black hover:bg-gray-700 hover:text-white'
 		}`;
 
 	return (
