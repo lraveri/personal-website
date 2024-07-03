@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import NavButton from '@/components/navbar/NavButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes';
@@ -7,28 +7,10 @@ import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 
 const MobileMenuToggle = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-	const menuRef = useRef<HTMLDivElement>(null);
 
 	const toggleMobileMenu = () => {
 		setIsMobileMenuOpen(!isMobileMenuOpen);
 	};
-
-	const handleClickOutside = (event: MouseEvent) => {
-		if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-			setIsMobileMenuOpen(false);
-		}
-	};
-
-	useEffect(() => {
-		if (isMobileMenuOpen) {
-			document.addEventListener('mousedown', handleClickOutside);
-		} else {
-			document.removeEventListener('mousedown', handleClickOutside);
-		}
-		return () => {
-			document.removeEventListener('mousedown', handleClickOutside);
-		};
-	}, [isMobileMenuOpen]);
 
 	return (
 		<>
@@ -36,12 +18,19 @@ const MobileMenuToggle = () => {
 				<FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} />
 			</button>
 			{isMobileMenuOpen && (
-				<div ref={menuRef} className="absolute top-full left-0 w-full bg-white z-50 shadow-lg">
+				<div className="absolute top-full left-0 w-full bg-white z-50 shadow-lg">
 					<div className="flex flex-col items-center space-y-4 mt-4 mb-4">
 						<NavButton href="/blog" label="Blog" />
 						<NavButton href="/projects" label="Projects" />
 						<NavButton href="/experience" label="Experience" />
 						<NavButton href="/about" label="About" />
+						{/*<a*/}
+						{/*	href="/luca_raveri_cv.pdf"*/}
+						{/*	download*/}
+						{/*	className="bg-teal text-white py-2 px-4 rounded-full border-2 border-teal hover:bg-lightgray hover:text-teal"*/}
+						{/*>*/}
+						{/*	Download CV*/}
+						{/*</a>*/}
 					</div>
 				</div>
 			)}
