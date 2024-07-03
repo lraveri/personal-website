@@ -18,7 +18,7 @@ const MobileMenuToggle = () => {
 				<FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} />
 			</button>
 			{isMobileMenuOpen && (
-				<div className="absolute top-full left-0 w-full bg-white z-50">
+				<div className="absolute top-full left-0 w-full bg-white z-50 shadow-lg">
 					<div className="flex flex-col items-center space-y-4 mt-4 mb-4">
 						<NavButton href="/blog" label="Blog" />
 						<NavButton href="/projects" label="Projects" />
