@@ -1,4 +1,5 @@
 import ProjectCard from '@/components/cards/ProjectCard';
+import Header from '@/components/Header';
 
 const Projects = () => {
 	const projects = [
@@ -38,7 +39,7 @@ const Projects = () => {
 	return (
 		<>
 			<div className="container mx-auto py-8">
-				<h1 className="text-3xl font-bold mb-6 text-center sm:py-4">Creative Projects</h1>
+				<Header title={'Creative Projects'} />
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 					{projects.map(project => (
 						<ProjectCard
@@ -52,7 +53,7 @@ const Projects = () => {
 				</div>
 			</div>
 			<div className="container mx-auto">
-				<h1 className="text-3xl font-bold mb-6 text-center sm:py-4">Open Source</h1>
+				<Header title={'Open Source'} />
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 					{openSource.map(project => (
 						<ProjectCard

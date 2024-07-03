@@ -9,9 +9,12 @@ interface CardProps {
 
 const ArticleCard: React.FC<CardProps> = ({ imageSrc, title, href }) => {
 	return (
-		<Link href={href}
-			  className="block bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
-			  target="_blank" rel="noopener noreferrer">
+		<Link
+			href={href}
+			className="block bg-white shadow-md rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			<Image
 				src={imageSrc}
 				alt={title}

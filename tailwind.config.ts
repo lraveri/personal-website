@@ -45,25 +45,6 @@ const config: Config = {
 			}
 		}
 	},
-	plugins: [
-		function({ addUtilities }: PluginAPI) {
-			addUtilities({
-				'.border-gradient': {
-					position: 'relative'
-				},
-				'.border-gradient:before': {
-					content: '""',
-					position: 'absolute',
-					top: '-2px',
-					left: '-2px',
-					right: '-2px',
-					bottom: '-2px',
-					zIndex: '-1',
-					background: 'linear-gradient(to right, #008080, #66CDAA)',
-					borderRadius: 'inherit'
-				}
-			});
-		}
-	]
+	plugins: []
 };
 export default config;

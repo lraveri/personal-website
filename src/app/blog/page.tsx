@@ -1,4 +1,5 @@
 import ArticleCard from '@/components/cards/ArticleCard';
+import Header from '@/components/Header';
 
 const Blog = () => {
 	const articles = [
@@ -30,7 +31,7 @@ const Blog = () => {
 
 	return (
 		<div className="container mx-auto py-8">
-			<h1 className="text-3xl font-bold mb-6 text-center sm:py-4">Articles</h1>
+			<Header title={'Articles'} />
 			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 				{articles.map(article => (
 					<ArticleCard

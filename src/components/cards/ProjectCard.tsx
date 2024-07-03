@@ -11,7 +11,7 @@ interface CardProps {
 const ProjectCard: React.FC<CardProps> = ({ imageSrc, title, href, description }) => {
 	return (
 		<Link href={href}
-			  className="block bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+			  className="block bg-white shadow-md rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
 			  target="_blank" rel="noopener noreferrer">
 			<Image
 				src={imageSrc}
