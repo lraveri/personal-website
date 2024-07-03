@@ -1,10 +1,11 @@
 import ProjectCard from '@/components/cards/ProjectCard';
 import Header from '@/components/Header';
 import { getOpenSourceProjects, getProjects } from '@/lib/service';
+import { OpenSource, Project } from '@prisma/client';
 
 const Projects = async () => {
-	const projects = await getProjects();
-	const openSource = await getOpenSourceProjects();
+	const projects: Project[] = await getProjects();
+	const openSource: OpenSource[] = await getOpenSourceProjects();
 
 	return (
 		<>

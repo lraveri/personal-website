@@ -1,9 +1,10 @@
 import ArticleCard from '@/components/cards/ArticleCard';
 import Header from '@/components/Header';
 import { getArticles } from '@/lib/service';
+import { Article } from '@prisma/client';
 
 const Blog = async () => {
-	const articles = await getArticles();
+	const articles: Article[] = await getArticles();
 
 	return (
 		<div className="container mx-auto py-8">

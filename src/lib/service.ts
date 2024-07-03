@@ -1,6 +1,7 @@
 import prisma from '@/lib/client/prisma';
+import { Article, OpenSource, Project } from '@prisma/client';
 
-export async function getProjects() {
+export async function getProjects(): Promise<Project[]> {
 	return prisma.project.findMany({
 		where: {
 			isPinned: false,
@@ -12,7 +13,7 @@ export async function getProjects() {
 	});
 }
 
-export async function getOpenSourceProjects() {
+export async function getOpenSourceProjects(): Promise<OpenSource[]> {
 	return prisma.openSource.findMany({
 		where: {
 			isPinned: false,
@@ -24,7 +25,7 @@ export async function getOpenSourceProjects() {
 	});
 }
 
-export async function getArticles() {
+export async function getArticles(): Promise<Article[]> {
 	return prisma.article.findMany({
 		where: {
 			isPinned: false,
