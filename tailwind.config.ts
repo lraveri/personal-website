@@ -10,8 +10,11 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
+				// teal: {
+				// 	DEFAULT: '#008080'
+				// },
 				teal: {
-					DEFAULT: '#008080'
+					DEFAULT: '#255957'
 				},
 				navy: {
 					DEFAULT: '#001f3f'
@@ -25,8 +28,11 @@ const config: Config = {
 				white: {
 					DEFAULT: '#EFEFF3'
 				},
+				// aqua: {
+				// 	DEFAULT: '#66CDAA'
+				// },
 				aqua: {
-					DEFAULT: '#66CDAA'
+					DEFAULT: '#437C90'
 				},
 				blue: {
 					DEFAULT: '#22158A'
