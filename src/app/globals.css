@@ -33,6 +33,6 @@ body {
 
 .underline-color-teal {
     text-decoration-color: #255957;
-    text-decoration-thickness: 4px;
+    text-decoration-thickness: 3px;
     text-underline-offset: 14px;
 }
