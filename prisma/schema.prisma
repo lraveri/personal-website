@@ -1,0 +1,46 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Article {
+  id          Int      @id @default(autoincrement())
+  isPinned    Boolean  @default(false)
+  isPublished Boolean  @default(true)
+  order       Int
+  imageSrc    String
+  title       String
+  href        String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Project {
+  id          Int      @id @default(autoincrement())
+  isPinned    Boolean  @default(false)
+  isPublished Boolean  @default(true)
+  order       Int
+  imageSrc    String
+  title       String
+  href        String
+  description String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model OpenSource {
+  id          Int      @id @default(autoincrement())
+  isPinned    Boolean  @default(false)
+  isPublished Boolean  @default(true)
+  order       Int
+  imageSrc    String
+  title       String
+  href        String
+  description String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

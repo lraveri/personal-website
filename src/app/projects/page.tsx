@@ -1,40 +1,10 @@
 import ProjectCard from '@/components/cards/ProjectCard';
 import Header from '@/components/Header';
+import { getOpenSourceProjects, getProjects } from '@/lib/service';
 
-const Projects = () => {
-	const projects = [
-		{
-			id: 1,
-			imageSrc: '/images/project_1.webp',
-			title: 'Personal Website',
-			href: 'https://www.lucaraveri.com/',
-			description: 'My personal website, built with Next.js and Tailwind CSS. Hosted on Vercel.'
-		},
-		{
-			id: 2,
-			imageSrc: '/images/project_2.webp',
-			title: 'Yuung',
-			href: 'https://yuung.cloud',
-			description: 'Startup project to assist psycologist in their daily work. Built with Next.js and Supabase.'
-		},
-		{
-			id: 3,
-			imageSrc: '/images/project_3.webp',
-			title: 'CodeGym',
-			href: 'https://codegymonline.com',
-			description: 'Personal project that aim to use GenAI in order to help developer preparing for job interviews.'
-		}
-	];
-
-	const openSource = [
-		{
-			id: 1,
-			imageSrc: '/images/open_source_1.webp',
-			title: 'PHP GeoJSON Converter',
-			href: 'https://github.com/lraveri/geojson-converter',
-			description: 'A simple PHP library to convert GeoJSON files to other formats, such as GPX and KML.'
-		}
-	];
+const Projects = async () => {
+	const projects = await getProjects();
+	const openSource = await getOpenSourceProjects();
 
 	return (
 		<>
