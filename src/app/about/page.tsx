@@ -34,10 +34,9 @@ export default function About() {
 					<div className="mb-4">
 						<h3 className="text-xl font-semibold text-aqua">Programming Languages</h3>
 						<ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-							<li className="text-gray-600">Java</li>
 							<li className="text-gray-600">JavaScript</li>
+							<li className="text-gray-600">Java</li>
 							<li className="text-gray-600">PHP</li>
-							<li className="text-gray-600">Python</li>
 						</ul>
 					</div>
 					<div className="mb-4">
@@ -46,16 +45,19 @@ export default function About() {
 							<li className="text-gray-600">Spring Boot</li>
 							<li className="text-gray-600">Laravel</li>
 							<li className="text-gray-600">React</li>
-							<li className="text-gray-600">Node.js</li>
+							<li className="text-gray-600">Next.js</li>
 						</ul>
 					</div>
 					<div className="mb-4">
-						<h3 className="text-xl font-semibold text-aqua">Tools and Platforms</h3>
+						<h3 className="text-xl font-semibold text-aqua">Technologies</h3>
 						<ul className="list-disc list-inside ml-4 mt-2 space-y-1">
 							<li className="text-gray-600">AWS</li>
 							<li className="text-gray-600">Docker</li>
-							<li className="text-gray-600">Kubernetes</li>
 							<li className="text-gray-600">CI/CD Pipelines</li>
+							<li className="text-gray-600">Node.js</li>
+							<li className="text-gray-600">Terraform</li>
+							<li className="text-gray-600">SQL</li>
+							<li className="text-gray-600">Git</li>
 						</ul>
 					</div>
 				</div>
