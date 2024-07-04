@@ -32,7 +32,7 @@ export default function About() {
 			<div className="flex justify-center sm:px-0 px-4 mt-8">
 				<div className="bg-white shadow-2xl rounded-lg p-6 w-full sm:w-2/3 lg:w-1/2">
 					<div className="mb-4">
-						<h3 className="text-2xl font-semibold text-aqua">Programming Languages</h3>
+						<h3 className="text-xl font-semibold text-aqua">Programming Languages</h3>
 						<ul className="list-disc list-inside ml-4 mt-2 space-y-1">
 							<li className="text-gray-600">Java</li>
 							<li className="text-gray-600">JavaScript</li>
@@ -41,7 +41,7 @@ export default function About() {
 						</ul>
 					</div>
 					<div className="mb-4">
-						<h3 className="text-2xl font-semibold text-aqua">Frameworks and Libraries</h3>
+						<h3 className="text-xl font-semibold text-aqua">Frameworks and Libraries</h3>
 						<ul className="list-disc list-inside ml-4 mt-2 space-y-1">
 							<li className="text-gray-600">Spring Boot</li>
 							<li className="text-gray-600">Laravel</li>
@@ -50,7 +50,7 @@ export default function About() {
 						</ul>
 					</div>
 					<div className="mb-4">
-						<h3 className="text-2xl font-semibold text-aqua">Tools and Platforms</h3>
+						<h3 className="text-xl font-semibold text-aqua">Tools and Platforms</h3>
 						<ul className="list-disc list-inside ml-4 mt-2 space-y-1">
 							<li className="text-gray-600">AWS</li>
 							<li className="text-gray-600">Docker</li>
