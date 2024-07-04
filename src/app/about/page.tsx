@@ -34,9 +34,9 @@ export default function About() {
 					<div className="mb-4">
 						<h3 className="text-xl font-semibold text-aqua">Programming Languages</h3>
 						<ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-							<li className="text-gray-600">JavaScript</li>
 							<li className="text-gray-600">Java</li>
 							<li className="text-gray-600">PHP</li>
+							<li className="text-gray-600">JavaScript</li>
 						</ul>
 					</div>
 					<div className="mb-4">
