@@ -13,7 +13,7 @@ export default function About() {
 						fascination with how things work and a desire to build and create.
 					</p>
 					<p className="text-gray-600 mb-4">
-						My passion grew while pursuing my academic career, which led me to earn a Master&apos;s Degree
+						My passion grew during my academic career, which led me to earn a Master&apos;s Degree
 						in Computer Engineering.
 						This journey provided me with a deep technical perspective and helped me develop strong
 						problem-solving skills.
@@ -21,21 +21,21 @@ export default function About() {
 					<p className="text-gray-600 mb-4">
 						My professional adventure started at Jakala, where I quickly found my passion for back-end
 						development. The technical challenge of building efficient, scalable systems for real-world
-						applications immediately stimulated me. Each project was a new puzzle, a fresh opportunity to
+						applications immediately fascinated me. Each project was a new puzzle, a fresh opportunity to
 						study and learn new technologies.
 					</p>
 					<p className="text-gray-600 mb-4">
 						H-Farm has been a pivotal chapter in my career, opening doors to exciting events, hackathons,
-						and extra universitary courses. Here, I’ve delved into cutting-edge
-						technologies, with a particular focus on Generative AI. These experiences have not only
-						broadened my technical horizon but also allowed me to connect with a community of like-minded
-						tech enthusiasts.
+						and extra university courses. Here, I&apos;ve explored the latest technologies, with a
+						particular focus on Generative AI.
+						These experiences have not only expanded my technical knowledge but also allowed me to connect
+						with a community of other tech lovers.
 					</p>
 					<p className="text-gray-600 mb-4">
 						Lately, I&apos;ve been diving into the world of JavaScript and Node.js. I have become deeply
 						passionate about the entire JavaScript ecosystem, which has been a great source of inspiration.
-						I&apos;m constantly exploring new frameworks, tools, and best practices to stay ahead in this
-						fast-evolving world.
+						I&apos;m constantly exploring new frameworks, tools, and technologies to stay ahead in this
+						fast-evolving world. 🚀
 					</p>
 					{/*<p className="text-gray-600 mb-4">*/}
 					{/*	When I&apos;m not coding, you can find me contributing to open-source projects, attending tech*/}
