@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Home() {
 	return (
-		<div className="flex flex-col items-center justify-center min-h-screen bg-white text-center">
+		<div className="flex flex-col items-center justify-center min-h-screen bg-white text-center -mt-12 sm:-mt-0">
 			<div className="relative rounded-full mb-4 h-[200px] w-[200px] sm:w-[300px] md:h-[300px]">
 				<Image
 					src="/profile.png"
