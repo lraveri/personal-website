@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Home() {
 	return (
 		<div className="flex flex-col items-center justify-center min-h-screen bg-white text-center">
-			<div className="relative rounded-full mb-4">
+			<div className="relative rounded-full mb-4 h-[200px] w-[200px] sm:w-[300px] md:h-[300px]">
 				<Image
 					src="/profile.png"
 					alt="Luca Raveri"
@@ -20,6 +20,13 @@ export default function Home() {
 				<br />
 				Let&apos;s connect! 🚀
 			</p>
+			<a
+				href="/luca_raveri_cv.pdf"
+				download
+				className="sm:hidden bg-teal text-white py-2 px-4 rounded-full border-2 border-teal hover:bg-lightgray hover:text-teal"
+			>
+				Download CV
+			</a>
 		</div>
 	);
 }
