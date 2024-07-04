@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import { getOpenSourceProjects, getProjects } from '@/lib/service';
 import { OpenSource, Project } from '@prisma/client';
 
-const Projects = async () => {
+export default async function Projects() {
 	const projects: Project[] = await getProjects();
 	const openSource: OpenSource[] = await getOpenSourceProjects();
 
@@ -40,5 +40,3 @@ const Projects = async () => {
 		</>
 	);
 };
-
-export default Projects;

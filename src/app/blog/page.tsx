@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import { getArticles } from '@/lib/service';
 import { Article } from '@prisma/client';
 
-const Blog = async () => {
+export default async function Blog() {
 	const articles: Article[] = await getArticles();
 
 	return (
@@ -35,5 +35,3 @@ const Blog = async () => {
 		// </div>;
 	);
 };
-
-export default Blog;

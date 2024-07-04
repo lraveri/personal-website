@@ -7,7 +7,7 @@ interface CardProps {
 	href: string;
 }
 
-const ArticleCard: React.FC<CardProps> = ({ imageSrc, title, href }) => {
+export default function ArticleCard({ imageSrc, title, href }: CardProps) {
 	return (
 		<Link
 			href={href}
@@ -28,5 +28,3 @@ const ArticleCard: React.FC<CardProps> = ({ imageSrc, title, href }) => {
 		</Link>
 	);
 };
-
-export default ArticleCard;

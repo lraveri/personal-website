@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 
-const MobileMenuToggle = () => {
+export default function MobileMenuToggle() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 	const toggleMobileMenu = () => {
@@ -37,5 +37,3 @@ const MobileMenuToggle = () => {
 		</>
 	);
 };
-
-export default MobileMenuToggle;

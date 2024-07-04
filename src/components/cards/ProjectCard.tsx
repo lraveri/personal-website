@@ -8,7 +8,7 @@ interface CardProps {
 	href: string;
 }
 
-const ProjectCard: React.FC<CardProps> = ({ imageSrc, title, href, description }) => {
+export default function ProjectCard({ imageSrc, title, href, description }: CardProps) {
 	return (
 		<Link href={href}
 			  className="block bg-white shadow-md rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 mx-8 sm:mx-0"
@@ -29,5 +29,3 @@ const ProjectCard: React.FC<CardProps> = ({ imageSrc, title, href, description }
 		</Link>
 	);
 };
-
-export default ProjectCard;
