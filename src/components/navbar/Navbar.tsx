@@ -11,7 +11,7 @@ export default async function Navbar() {
 				<div className="flex items-center">
 					<Link href={'/'}>
 						<Image
-							src="/profile.png"
+							src="/profile.webp"
 							alt="Logo"
 							width={40}
 							height={40}
