@@ -10,6 +10,7 @@ export default function Home() {
 					width={300}
 					height={300}
 					className="rounded-full"
+					priority={true}
 				/>
 				<div className="border-2 border-aqua absolute inset-0 rounded-full"></div>
 			</div>

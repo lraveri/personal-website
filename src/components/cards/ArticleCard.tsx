@@ -21,6 +21,7 @@ export default function ArticleCard({ imageSrc, title, href }: CardProps) {
 				width={400}
 				height={250}
 				className="w-full h-56 object-cover"
+				priority={true}
 			/>
 			<div className="p-4">
 				<h2 className="text-xl font-bold text-gray-800">{title}</h2>

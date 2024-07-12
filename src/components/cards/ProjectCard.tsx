@@ -19,6 +19,7 @@ export default function ProjectCard({ imageSrc, title, href, description }: Card
 				width={400}
 				height={250}
 				className="w-full h-56 object-cover"
+				priority={true}
 			/>
 			<div className="pl-4 pb-2 pr-4 pt-4">
 				<h2 className="text-xl font-bold text-gray-800">{title}</h2>
