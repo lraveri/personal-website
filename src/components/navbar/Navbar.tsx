@@ -16,6 +16,7 @@ export default async function Navbar() {
 							width={40}
 							height={40}
 							className="w-10 h-10 rounded-full bg-white border-2 border-aqua mr-4 ml-4 sm:ml-0"
+							priority={true}
 						/>
 					</Link>
 					<Link href={'/'}>
