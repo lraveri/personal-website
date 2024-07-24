@@ -35,13 +35,13 @@ export default function RootLayout({
               (function() {
                 if (window.innerWidth > 1024) {
                   var script = document.createElement('script');
-                  script.src = "https://cdn.jsdelivr.net/gh/lraveri/gpt-delivr@v0.1.1/packages/widget/dist/bundle.js";
+                  script.src = "https://cdn.jsdelivr.net/gh/lraveri/gpt-delivr@v0.1.2/packages/widget/dist/bundle.js";
                   script.onload = function() {
                     initializeChat({
                       baseURL: "https://monorepo-lerna-khaki.vercel.app",
                       baseColor: "#255957",
                       assistantId: "asst_7A5Fy0UskQKTVtOWFLOGwd3B",
-                      initialMessage: "Ciao, sono l'assistente di Luca Raveri, come posso aiutarti?",
+                      initialMessage: "Ciao, sono l'assistente di Luca Raveri. Puoi chiedermi informazioni su di me o sul mio progetto più recente, cioè gptDelivr! Spero di poterti essere d'aiuto! 🙂",
                       module: "luca",
                     });
                   };
