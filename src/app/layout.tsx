@@ -35,7 +35,7 @@ export default function RootLayout({
               (function() {
 
                   var script = document.createElement('script');
-                  script.src = "https://cdn.jsdelivr.net/gh/lraveri/gpt-delivr@v0.1.8/packages/widget/dist/bundle.js";
+                  script.src = "https://cdn.jsdelivr.net/gh/lraveri/gpt-delivr@v0.1.9/packages/widget/dist/bundle.js";
                   script.onload = function() {
                     initializeChat({
                       baseURL: "https://monorepo-lerna-khaki.vercel.app",
