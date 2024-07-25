@@ -33,9 +33,9 @@ export default function RootLayout({
 			dangerouslySetInnerHTML={{
 				__html: `
               (function() {
-                if (window.innerWidth > 1024) {
+
                   var script = document.createElement('script');
-                  script.src = "https://cdn.jsdelivr.net/gh/lraveri/gpt-delivr@v0.1.7/packages/widget/dist/bundle.js";
+                  script.src = "https://cdn.jsdelivr.net/gh/lraveri/gpt-delivr@v0.1.8/packages/widget/dist/bundle.js";
                   script.onload = function() {
                     initializeChat({
                       baseURL: "https://monorepo-lerna-khaki.vercel.app",
@@ -46,7 +46,7 @@ export default function RootLayout({
                     });
                   };
                   document.head.appendChild(script);
-                }
+               
               })();
             `
 			}}
