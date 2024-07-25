@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-		<body className={atkinson.className}>
+		<body className={`${atkinson.className} text-black`}>
 		<div className="min-h-screen flex flex-col items-center bg-white">
 			<Navbar></Navbar>
 			<main className="flex-grow">{children}</main>
