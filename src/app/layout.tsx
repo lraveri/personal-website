@@ -41,7 +41,7 @@ export default function RootLayout({
                       baseURL: "https://monorepo-lerna-khaki.vercel.app",
                       baseColor: "#255957",
                       assistantId: "asst_7A5Fy0UskQKTVtOWFLOGwd3B",
-                      initialMessage: "Ciao, sono l'assistente di Luca Raveri. Puoi chiedermi informazioni su di me o sul mio progetto più recente, cioè gptDelivr! Spero di poterti essere d'aiuto! 🙂",
+                      initialMessage: "Ciao, sono la versione virtuale di Luca Raveri. Puoi chiedermi informazioni su di me o sul mio progetto più recente, cioè gptDelivr! Spero di poterti essere d'aiuto! 🙂",
                       module: "luca",
                     });
                   };
